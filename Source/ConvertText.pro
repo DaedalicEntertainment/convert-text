@@ -9,6 +9,9 @@ CONFIG -= app_bundle
 
 TEMPLATE = app
 
+VERSION = 0.1
+DEFINES += APP_VERSION=\\\"$$VERSION\\\"
+
 SOURCES += main.cpp \
     Writers/rtftextwriter.cpp \
     Writers/textwriter.cpp \

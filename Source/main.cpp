@@ -14,10 +14,18 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
+    cout << "ConvertText v" << APP_VERSION << " - Converts between multiple text formats" << endl;
+    cout << "Copyright 2016 Daedalic Entertainment" << endl;
+    cout << "https://github.com/daedalic" << endl;
+    cout << endl;
+
     // Parse arguments.
     if (argc != 3)
     {
         cout << "USAGE: ConvertText <Source> <Destination>" << endl;
+        cout << endl;
+        cout << "Supported input formats: Markdown (.md)" << endl;
+        cout << "Supported output formats: BBCode (.bbcode), RTF (.rtf)" << endl;
         return 1;
     }
 
